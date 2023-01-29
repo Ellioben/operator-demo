@@ -37,8 +37,9 @@ func main() {
 	controller := pkg.NewController(clientset, serviceInformer, ingressInformer)
 	stopCh := make(chan struct{})
 	factory.Start(stopCh)
+	//等待数据进行同步，同步到本地后，进行下一步
 	factory.WaitForCacheSync(stopCh)
-
+	//启动controller去处理事件
 	controller.Run(stopCh)
 
 

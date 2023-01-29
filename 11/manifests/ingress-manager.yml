@@ -1,3 +1,4 @@
+# kubectl create deployment ingress-manager--image wangtaotao2015/ingress-manager:1.0.0 --dry-run=client -o yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
