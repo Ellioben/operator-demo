@@ -1,3 +1,4 @@
+# 2.kubectl create serviceaccount ingress-manager-sa --dry-run=client -o yaml > manifests/ingress-manager-sa.yml
 apiVersion: v1
 kind: ServiceAccount
 metadata:
