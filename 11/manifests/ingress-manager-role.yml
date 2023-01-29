@@ -1,3 +1,4 @@
+# 3. kubectl create role ingress-manager-role --resource=ingress-service --verb list,watch,create,update,delete --dry-run=client -o yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:

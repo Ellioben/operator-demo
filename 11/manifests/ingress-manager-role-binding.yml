@@ -1,3 +1,4 @@
+# 4.kubectl create rolebinding ingress-manager-rb--role ingress-manager-role --serviceaccount default:ingress-manager-sa --dry-run=client -o yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
